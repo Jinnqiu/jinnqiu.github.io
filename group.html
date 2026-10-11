@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="Jinniao Qiu">
+  <meta name="description" content="Information for current and prospective graduate students, and research connections around the world.">
+  <title>More · Jinniao Qiu</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body data-page="group">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- SHARED HEADER: keep navigation consistent across all six HTML pages. -->
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="wordmark" href="index.html" aria-label="Jinniao Qiu, home">
+        <span class="monogram" aria-hidden="true">JQ</span>
+        <span class="wordmark-text">Jinniao Qiu<small>MATHEMATICS · UCALGARY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Research &amp; Teaching</a>
+        <a href="group.html" aria-current="page">More</a>
+      </nav>
+    </div>
+  </header>
+  <!-- PAGE CONTENT: edit directly, save, and refresh your browser. -->
+  <main id="main-content" class="page-shell content" tabindex="-1">
+    <header class="page-heading compact-heading">
+      <p class="eyebrow">JINNIAO QIU · UNIVERSITY OF CALGARY</p>
+      <h1>More</h1>
+    </header>
+    <section class="student-guidance" aria-labelledby="graduate-students-heading">
+      <h2 id="graduate-students-heading">For current and prospective graduate students</h2>
+      <p><strong>Current students:</strong> Please read the recommendations from
+      Harvard’s <a href="https://cmsa.fas.harvard.edu/aimathphd_summit/">Summit on PhD Math Education in the Age of AI</a>
+      and consider their implications for your mathematical training and research.</p>
+      <p><strong>Prospective students:</strong> The students with strong academic backgrounds and research interests are welcome to
+      <a href="mailto:jinniao.qiu@ucalgary.ca">contact me by email</a> about graduate study
+      opportunities; in the email, please attach your transcripts if available. Inquiries will
+      receive a response only when funding and supervisory capacity are available
+      and your background is a suitable match.</p>
+    </section>
+    <section class="collaborator-map" aria-labelledby="collaborator-map-heading">
+      <h2 id="collaborator-map-heading">Collaborations around the world</h2>
+      <figure class="globe-figure">
+        <fieldset class="globe-views">
+          <legend>Choose a globe view</legend>
+          <input class="globe-choice" type="radio" name="globe-view" id="globe-americas" checked>
+          <label for="globe-americas">Americas</label>
+          <input class="globe-choice" type="radio" name="globe-view" id="globe-europe">
+          <label for="globe-europe">Europe &amp; Africa</label>
+          <input class="globe-choice" type="radio" name="globe-view" id="globe-asia">
+          <label for="globe-asia">Asia &amp; Pacific</label>
+          <div id="interactive-globe" hidden>
+            <canvas id="world-globe" width="660" height="550" tabindex="0" role="img" aria-label="Turnable globe of research collaboration cities" aria-describedby="globe-instructions globe-city-description"></canvas>
+            <div class="globe-controls">
+              <p id="globe-instructions">Drag to turn. Use arrow keys when the globe is focused.</p>
+              <button id="globe-reset" type="button">Reset view</button>
+            </div>
+            <p id="globe-city-description" class="visually-hidden">Collaboration cities: Calgary, Burnaby, Berkeley, Los Angeles, Ann Arbor, New York, Augusta, Tampa, Edinburgh, Coventry, Oxford, Paris, Zürich, Berlin, Changsha, Shanghai, Hong Kong, Sydney, Toronto, Södertälje, Reggio Emilia, Vienna.</p>
+          </div>
+          <div class="globe-stage">
+            <img class="globe-panel globe-panel-americas" src="assets/globe-americas.svg" width="660" height="550" alt="Collaboration cities: Calgary, Burnaby, Berkeley, Los Angeles, Ann Arbor, New York, Augusta, Tampa, Toronto.">
+            <img class="globe-panel globe-panel-europe" src="assets/globe-europe.svg" width="660" height="550" alt="Collaboration cities: Edinburgh, Coventry, Oxford, Paris, Zürich, Berlin, Södertälje, Reggio Emilia, Vienna.">
+            <img class="globe-panel globe-panel-asia" src="assets/globe-asia.svg" width="660" height="550" alt="Collaboration cities: Changsha, Shanghai, Hong Kong, Sydney.">
+          </div>
+        </fieldset>
+        <figcaption class="globe-caption">
+          <p class="map-credit">Map geography: <a href="https://www.naturalearthdata.com/">Natural Earth</a>.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </main>
+  <!-- SHARED FOOTER: keep contact information consistent across all six HTML pages. -->
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p><strong>Jinniao Qiu</strong><br>Department of Mathematics and Statistics · University of Calgary</p>
+      <p class="footer-links"><a href="mailto:jinniao.qiu@ucalgary.ca">Contact</a><span aria-hidden="true">/</span><a href="https://profiles.ucalgary.ca/jinniao-qiu">UCalgary profile</a><br><span class="copyright">© 2026 Jinniao Qiu</span></p>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
+  <script src="assets/globe.js" defer></script>
+</body>
+</html>
