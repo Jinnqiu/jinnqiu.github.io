@@ -86,10 +86,11 @@
     const page = envelope.page;
     // These labels are owner-approved public navigation, not private draft data.
     // Keep numeric page identity and authenticated encryption metadata unchanged.
-    const label = page === 3 ? 'Page A-Difference' : `Page ${page}`;
+    const label = page === 3 ? 'Page A-Difference' : page === 4 ? 'Page B-Parity' : `Page ${page}`;
     const pages = [{ number: 1, label: 'Page 1', file: 'puzzles.html' },
       { number: 2, label: 'Page 2', file: 'puzzles-2.html' },
-      { number: 3, label: 'Page A-Difference', file: 'puzzles-3.html' }];
+      { number: 3, label: 'Page A-Difference', file: 'puzzles-3.html' },
+      { number: 4, label: 'Page B-Parity', file: 'puzzles-4.html' }];
     if (!pages.some(item => item.number === page)) {
       pages.push({ number: page, label, file: `puzzles-${page}.html` });
     }
@@ -130,7 +131,7 @@
   <main id="main-content" class="page-shell content" tabindex="-1">
     <header class="page-heading compact-heading">
       <p class="eyebrow">PUZZLES FOR KIDS · ${label}</p>
-      <h1>${page === 3 ? label : 'A little more to explore'}</h1>
+      <h1>${page === 3 || page === 4 ? label : 'A little more to explore'}</h1>
       <p class="page-subtitle">Enter the password to open this collection of 15 puzzles.</p>
     </header>
     <section class="puzzle-lock-panel" aria-labelledby="puzzle-lock-heading">
